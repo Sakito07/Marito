@@ -8,17 +8,16 @@ A full-stack journaling, habit-tracking, and productivity web application built 
 
 1. [Features](#features)  
 2. [Tech Stack](#tech-stack)  
-3. [Demo Screenshot](#demo-screenshot)  
-4. [Getting Started](#getting-started)  
+3. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Backend Setup](#backend-setup)  
    - [Frontend Setup](#frontend-setup)  
-5. [Environment Variables](#environment-variables)  
-6. [Available Scripts](#available-scripts)  
-7. [API Reference](#api-reference)  
-8. [Project Structure](#project-structure)  
-9. [Contributing](#contributing)  
-10. [License](#license)  
+4. [Environment Variables](#environment-variables)  
+5. [Available Scripts](#available-scripts)  
+6. [API Reference](#api-reference)  
+7. [Project Structure](#project-structure)  
+8. [Contributing](#contributing)  
+9. [License](#license)  
 
 ---
 
@@ -45,12 +44,6 @@ A full-stack journaling, habit-tracking, and productivity web application built 
 | Frontend    | React, Vite, Tailwind CSS          |
 | State Mgmt. | Zustand                            |
 | Linting     | ESLint                             |
-
----
-
-## Demo Screenshot
-
-![Unbreakable Demo](public/screenshot-for-readme.png)
 
 ---
 
