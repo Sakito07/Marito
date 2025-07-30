@@ -58,9 +58,9 @@ A full-stack journaling, habit-tracking, and productivity web application built 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) v14+  
-- [npm](https://www.npmjs.com/) v6+  
-- [PostgreSQL](https://www.postgresql.org/) v12+  
+- [Node.js](https://nodejs.org/) v22
+- [npm](https://www.npmjs.com/) v11
+- [PostgreSQL](https://www.postgresql.org/) v17
 
 ### Backend Setup
 
