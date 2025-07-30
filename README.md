@@ -146,16 +146,6 @@ nodeENV=development
 ```
 http://localhost:3000/api
 ```
-
-### Authentication
-
-| Endpoint        | Method | Body                            | Description                    |
-| --------------- | ------ | ------------------------------- | ------------------------------ |
-| `/users/signup` | POST   | `{ username, email, password }` | Register a new user            |
-| `/users/login`  | POST   | `{ email, password }`           | Log in and receive a JWT token |
-
-Include the token in `Authorization: Bearer <token>` for protected routes.
-
 ---
 
 ## Project Structure
