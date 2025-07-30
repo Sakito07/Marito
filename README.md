@@ -72,6 +72,7 @@ A full‑stack journaling, habit‑tracking, and productivity web application bu
 **1. Copy the example environment file and fill in your credentials:**
 ```bash
 cp .env.example .env
+```
 # then edit .env with your DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE, DB_PORT, jwtSecret
 
 2. Install dependencies:
@@ -132,27 +133,6 @@ Endpoint	Method	Body	Description
 
 Include the token in Authorization: Bearer <token> for protected routes.
 
-Habits
-Endpoint	Method	Body	Description
-/habits	GET	—	List all habits for the user
-/habits	POST	{ title, frequency }	Create a new habit
-/habits/:id	PUT	{ title, frequency }	Update habit by ID
-/habits/:id	DELETE	—	Delete habit by ID
-/habits/:id/check	POST	—	Mark habit as completed today
-
-Journal
-Endpoint	Method	Body	Description
-/journal	GET	—	List all journal entries
-/journal	POST	{ content }	Create a new entry
-/journal/:id	PUT	{ content }	Update an entry by ID
-/journal/:id	DELETE	—	Delete an entry by ID
-
-Tasks
-Endpoint	Method	Body	Description
-/tasks	GET	—	List all tasks
-/tasks	POST	{ title, dueDate }	Create a new task
-/tasks/:id	PUT	{ title, dueDate }	Update a task by ID
-/tasks/:id	DELETE	—	Delete a task by ID
 
 Project Structure
 bash
