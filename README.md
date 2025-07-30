@@ -1,6 +1,6 @@
 # Unbreakable
 
-A full‑stack journaling, habit‑tracking, and productivity web application built with Node.js, Express, PostgreSQL on the backend and React + Vite + Tailwind CSS on the frontend. Unbreakable helps you build positive daily habits, keep a private journal, track tasks, practice meditation and productivity techniques, and customize your theme.
+A full-stack journaling, habit-tracking, and productivity web application built with Node.js, Express, PostgreSQL on the backend and React + Vite + Tailwind CSS on the frontend. Unbreakable helps you build positive daily habits, keep a private journal, track tasks, practice meditation and productivity techniques, and customize your theme.
 
 ---
 
@@ -27,10 +27,10 @@ A full‑stack journaling, habit‑tracking, and productivity web application bu
 - **User Authentication**: Sign up, log in, secure password storage, JSON Web Tokens  
 - **Habit Tracker**: Create, read, update, delete habits; mark daily completions  
 - **Journal**: Private daily journaling with rich text support  
-- **Tasks**: To‑do list CRUD operations  
+- **Tasks**: To-do list CRUD operations  
 - **Meditation & Productivity**: Guided meditations and productivity tools  
 - **Theme Selector**: Light/dark mode toggle persisted in local storage  
-- **Responsive UI**: Mobile‑first design with Tailwind CSS  
+- **Responsive UI**: Mobile-first design with Tailwind CSS  
 - **State Management**: Zustand for lightweight global state  
 
 ---
@@ -67,30 +67,51 @@ A full‑stack journaling, habit‑tracking, and productivity web application bu
 1. Open a terminal and navigate to the `backend` folder:
    ```bash
    cd backend
-### Backend Setup
+   ```
 
-**1. Copy the example environment file and fill in your credentials:**
-```bash
-cp .env.example .env
-```
-# then edit .env with your DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE, DB_PORT, jwtSecret
+2. Copy the example environment file and fill in your credentials:
+   ```bash
+   cp .env.example .env
+   
+   # then edit .env with your DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE, DB_PORT, jwtSecret
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server (auto-restarts on change):
+   ```bash
+   npm run start
+   ```
+
+### Frontend Setup
+
+1. Open another terminal and navigate to the `frontend` folder:
+   ```bash
+   cd frontend
+   ```
 
 2. Install dependencies:
-npm install
+   ```bash
+   npm install
+   ```
 
-3. Start the development server (auto‑restarts on change):
-npm run start
-
-
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
 The frontend will be available at http://localhost:5173/ (or the port shown in your console).
 
-Environment Variables
-Create a .env file in the backend folder and define:
+---
 
-env
-Copy
-Edit
+## Environment Variables
+
+Create a `.env` file in the `backend` folder and define:
+
+```env
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_HOST=localhost
@@ -99,45 +120,47 @@ DB_PORT=5432
 PORT=3000
 jwtSecret=your_jwt_secret
 nodeENV=development
-Available Scripts
-Backend (in /backend)
-npm run start
-Starts the Node.js server with automatic reload on changes.
+```
 
-npm run lint
-Runs ESLint to check code quality.
+---
 
-Frontend (in /frontend)
-npm run dev
-Starts Vite dev server with hot module replacement.
+## Available Scripts
 
-npm run build
-Bundles the app for production into /dist.
+### Backend (in `/backend`)
 
-npm run preview
-Serves the production build locally.
+- **`npm run start`** - Starts the Node.js server with automatic reload on changes
+- **`npm run lint`** - Runs ESLint to check code quality
 
-npm run lint
-Runs ESLint on the React codebase.
+### Frontend (in `/frontend`)
 
-API Reference
-Base URL
-bash
-Copy
-Edit
+- **`npm run dev`** - Starts Vite dev server with hot module replacement
+- **`npm run build`** - Bundles the app for production into `/dist`
+- **`npm run preview`** - Serves the production build locally
+- **`npm run lint`** - Runs ESLint on the React codebase
+
+---
+
+## API Reference
+
+### Base URL
+```
 http://localhost:3000/api
-Authentication
-Endpoint	Method	Body	Description
-/users/signup	POST	{ username, email, password }	Register a new user
-/users/login	POST	{ email, password }	Log in and receive a JWT token
+```
 
-Include the token in Authorization: Bearer <token> for protected routes.
+### Authentication
 
+| Endpoint        | Method | Body                            | Description                    |
+| --------------- | ------ | ------------------------------- | ------------------------------ |
+| `/users/signup` | POST   | `{ username, email, password }` | Register a new user            |
+| `/users/login`  | POST   | `{ email, password }`           | Log in and receive a JWT token |
 
-Project Structure
-bash
-Copy
-Edit
+Include the token in `Authorization: Bearer <token>` for protected routes.
+
+---
+
+## Project Structure
+
+```
 Unbreakable/
 ├── backend/
 │   ├── src/
@@ -159,18 +182,22 @@ Unbreakable/
     ├── package.json
     ├── tailwind.config.js
     └── vite.config.js
-Contributing
-Fork the repository
+```
 
-Create a feature branch (git checkout -b feature/my-feature)
+---
 
-Commit your changes (git commit -m "feat: add my feature")
+## Contributing
 
-Push to your branch (git push origin feature/my-feature)
-
-Open a Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m "feat: add my feature"`)
+4. Push to your branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
 
 Please follow the existing code style and include tests for new functionality.
 
-License
+---
+
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
