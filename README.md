@@ -67,46 +67,21 @@ A full‑stack journaling, habit‑tracking, and productivity web application bu
 1. Open a terminal and navigate to the `backend` folder:
    ```bash
    cd backend
-Copy the example environment file and fill in your credentials:
+### Backend Setup
 
-bash
-Copy
-Edit
+**1. Copy the example environment file and fill in your credentials:**
+```bash
 cp .env.example .env
 # then edit .env with your DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE, DB_PORT, jwtSecret
-Install dependencies:
 
-bash
-Copy
-Edit
+2. Install dependencies:
 npm install
-Start the development server (auto‑restarts on change):
 
-bash
-Copy
-Edit
+3. Start the development server (auto‑restarts on change):
 npm run start
-The backend will run on http://localhost:3000/ by default.
 
-Frontend Setup
-Open a new terminal and navigate to the frontend folder:
 
-bash
-Copy
-Edit
-cd frontend
-Install dependencies:
 
-bash
-Copy
-Edit
-npm install
-Start the Vite dev server:
-
-bash
-Copy
-Edit
-npm run dev
 The frontend will be available at http://localhost:5173/ (or the port shown in your console).
 
 Environment Variables
